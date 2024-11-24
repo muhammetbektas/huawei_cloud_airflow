@@ -1,0 +1,4 @@
+findspark
+esdk-obs-python
+huaweicloudsdkcdm
+huaweicloudsdkcore

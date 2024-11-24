@@ -1,0 +1,24 @@
+[2024-11-20T17:24:41.062+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-20T17:24:41.084+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_dag.check_file_exists scheduled__2024-11-19T00:00:00+00:00 [queued]>
+[2024-11-20T17:24:41.092+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_dag.check_file_exists scheduled__2024-11-19T00:00:00+00:00 [queued]>
+[2024-11-20T17:24:41.092+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 3
+[2024-11-20T17:24:41.104+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): check_file_exists> on 2024-11-19 00:00:00+00:00
+[2024-11-20T17:24:41.112+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=80) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-20T17:24:41.113+0000] {standard_task_runner.py:72} INFO - Started process 81 to run task
+[2024-11-20T17:24:41.114+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'check_file_exists', 'scheduled__2024-11-19T00:00:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp2i4yxgrb']
+[2024-11-20T17:24:41.115+0000] {standard_task_runner.py:105} INFO - Job 15: Subtask check_file_exists
+[2024-11-20T17:24:41.163+0000] {task_command.py:467} INFO - Running <TaskInstance: my_dag.check_file_exists scheduled__2024-11-19T00:00:00+00:00 [running]> on host f16f6e21f449
+[2024-11-20T17:24:41.251+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_dag' AIRFLOW_CTX_TASK_ID='check_file_exists' AIRFLOW_CTX_EXECUTION_DATE='2024-11-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-19T00:00:00+00:00'
+[2024-11-20T17:24:41.252+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-20T17:24:41.266+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2024-11-20T17:24:41.267+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "Checking data..."']
+[2024-11-20T17:24:41.282+0000] {subprocess.py:99} INFO - Output:
+[2024-11-20T17:24:41.284+0000] {subprocess.py:106} INFO - Checking data...
+[2024-11-20T17:24:41.285+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2024-11-20T17:24:41.313+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-20T17:24:41.313+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=check_file_exists, run_id=scheduled__2024-11-19T00:00:00+00:00, execution_date=20241119T000000, start_date=20241120T172441, end_date=20241120T172441
+[2024-11-20T17:24:41.368+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-20T17:24:41.388+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-20T17:24:41.389+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
