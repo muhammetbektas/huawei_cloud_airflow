@@ -18,8 +18,8 @@ default_args = {
 def create_bucket():
 
     # Initialize credentials
-    ak = 'MBJPQNO9ERO1VTQAJVG1'  # Replace with your Access Key ID
-    sk = '7rMeNDOW1AN0wAFguPFx4gOYCXVLdbXFzsKQEx3m'  # Replace with your Secret Access Key
+    ak = ''  # Replace with your Access Key ID
+    sk = ''  # Replace with your Secret Access Key
     server = 'https://obs.cn-north-4.myhuaweicloud.com'  # Replace with your endpoint
 
 

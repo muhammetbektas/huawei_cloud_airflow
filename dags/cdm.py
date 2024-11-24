@@ -20,9 +20,9 @@ job_id = "1ds2g3fdgf"
 
 def start_cdm_job():
     
-    ak = "MBJPQNO9ERO1VTQAJVG1"
-    sk = "7rMeNDOW1AN0wAFguPFx4gOYCXVLdbXFzsKQEx3m"
-    projectId = "9937744dea504761a47d4d18824ac963"
+    ak = ""
+    sk = ""
+    projectId = ""
     job_id = "test"
     endpoint = "https://cdm.cn-north-4.myhuaweicloud.com" 
 
